@@ -1,6 +1,7 @@
 
 
 import logoText from './assets/images/logo-text.png'
+import bannerStack from './assets/images/banner-stack.png'
 
 function App() {
   return (
@@ -67,8 +68,47 @@ function App() {
         </div>
       </nav>
 
-      <main className="p-10">
-        
+      <main>
+        <section id="home" className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:py-28">
+          {/* Hero text */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              Build Your Next Project{' '}
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
+                with the Right Stack
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg lg:mx-0">
+              Explore frontend, backend, database, and tooling options. Compare them side by side and build the stack that fits your next project.
+            </p>
+
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+              <a
+                href="#technologies"
+                className="rounded-lg bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:scale-105"
+              >
+                Explore Technologies
+              </a>
+
+              <a
+                href="#about"
+                className="rounded-lg border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-pink-400 hover:text-pink-500"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          {/* Hero image */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={bannerStack}
+              alt="A colorful illustration of a development technology stack"
+              className="w-full max-w-md lg:max-w-lg"
+            />
+          </div>
+        </section>
       </main>
     </>
   )
